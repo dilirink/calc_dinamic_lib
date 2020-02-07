@@ -1,0 +1,14 @@
+
+
+1)  gcc -fPIC -c add.c di.c mul.c sub.c
+
+2)  gcc -shared -o libfunc.so add.o di.o mul.o sub.o
+
+3)  gcc -c main.c
+
+4)  gcc main.o -o dinamic_calc  -L. -lfunc
+
+5)  LD_LIBRARY_PATH=DPWD   для запуска 
+
+6)  ./dinamic_calc
+

@@ -1,0 +1,6 @@
+1) gcc -fpic -c add.c di.c mul.c sub.c
+2) gcc -shared add.o  -libadd.so
+*
+*
+*
+3)gcc main.c -o main -ldl
